@@ -64,7 +64,7 @@ export default Form;
 
 You'll notice we use array destructuring to give us different names for the state variables declared when we called `useState`.
 
-##### Array Detructuring
+##### Array Destructuring Example
 
 ```javascript
 const [x, y] = [1, 2];
@@ -89,7 +89,7 @@ In our code above:
 const [email, setEmail] = useState("");
 ```
 
-`email` is the current state value and `setEmail` is the function use to change it. You can this happen where we attach `setEmail` to `onChange` in our `input` tag.
+`email` is the current state value and `setEmail` is the function used to change it. You can see this happen where we attach `setEmail` to `onChange` in our `input` tag.
 
 The empty tags passed into `useState` are the initial state of the function. You can pass any data type you'd like, just like state in a class component. If you initialize the state with an object literal `{}` understand when you update it you must account for every property in the object.
 
@@ -99,7 +99,7 @@ We could stop right there if we were only concerned with binding the `onChange` 
 
 #### useEffect
 
-`useEffect` adds the ability to perform side effects from a funcion component. It serves the same purpose as certaint lifecycle methods `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`.
+`useEffect` adds the ability to perform side effects from a funcion component. It serves the same purpose as certain lifecycle methods `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`.
 
 By default, React runs the effects after every render, including the first render.
 
